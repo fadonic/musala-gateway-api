@@ -27,5 +27,10 @@ http://localhost:8000/api/devices/  | GET |
 http://localhost:8000/api/devices/find/{deviceID}  | GET |
 http://localhost:8000/api/devices/{deviceID}  | DELETE |
 
+#### Note
+* Github Actions was used for CI and automated build
+* Jest was used for writing test cases
+* You can use both online and offline mongoDB
+
 
 

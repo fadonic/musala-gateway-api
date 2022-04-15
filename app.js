@@ -5,6 +5,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 const helmet = require('helmet')
 
+//config dotenv
 dotenv.config()
 
 // Connect to database

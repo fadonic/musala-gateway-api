@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { validateIPAddress } = require('../util')
+const { validateIPAddress } = require('../utils')
 const Gateway = require('./../models/Gateway')
 
 // @Route api/gateways/register

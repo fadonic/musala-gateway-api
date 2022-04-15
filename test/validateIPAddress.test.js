@@ -1,5 +1,5 @@
 const { expectCt } = require('helmet')
-const { validateIPAddress } = require('../util')
+const { validateIPAddress } = require('../utils')
 
 test('should be false for empty ip', () => {
   expect(validateIPAddress('')).toBe(false)
@@ -14,5 +14,5 @@ test('should be false if ip block number start with 0', () => {
 })
 
 test('should be true if ip pass all validations', () => {
-  expect(validateIPAddress('172.16.254.1')).toBe(true)
+  expect(validateIPAddress('172.16.254.10')).toBe(true)
 })

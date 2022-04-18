@@ -14,6 +14,13 @@ router.post('/register', async (req, res) => {
   })
 
   try {
+    const checkDeviceExist = await Device.findOne({
+      uid: req.body.uid
+    })
+    if (checkDeviceExist) {
+      return res.status(500).json('UID already exist')
+    }
+
     // check for gataway first
     const device = await newDevice.save()
     if (device) {
